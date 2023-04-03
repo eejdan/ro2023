@@ -10,7 +10,7 @@ function App() {
         Track
       </div>
       <div id="footer">
-        Footer
+        Proiect executat de echipa Agape si Metanoia
       </div>
     </div>
   );
