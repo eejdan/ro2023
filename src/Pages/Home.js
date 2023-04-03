@@ -7,9 +7,9 @@ function Home() {
         <div className="wrapper">
           <Header />
           <div id="track-container">
-            <div className="top-section">
-                
-            </div>
+            <section>
+              Section 1
+            </section>
           </div>
           <div id="footer">
             Proiect executat de echipa Agape si Metanoia

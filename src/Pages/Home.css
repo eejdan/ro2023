@@ -1,0 +1,20 @@
+
+
+#track-container {
+    width: 100%;
+}
+#track-container > section {
+    width: 100%;
+    min-height: 90vh;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#track-container > section > .section-container {
+    width: 100%;
+    height: 100%;
+}
