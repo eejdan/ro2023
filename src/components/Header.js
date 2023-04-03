@@ -1,6 +1,12 @@
+
+
+import { Link } from 'react-router-dom'
+
 import './Header.css'
-import team from './team.svg'
-import project from './project.svg'
+import team from '../team.svg'
+import project from '../project.svg'
+
+
 function Header() {
     return (
         <div id='header' className="header-wrapper">
@@ -8,14 +14,17 @@ function Header() {
                 <div><img height='36' src={project} alt='logo'></img></div>
                 <div className="header-navigation">
                     <div className="_nav-item-wrapper">
-                        <div className="_nav-item-container">
-                            Test
-                        </div>
+                        <Link to='/orase'>
+                            <div className="_nav-item-container">
+                                Orase
+                            </div></Link>
                     </div>
                     <div className="_nav-item-wrapper">
-                        <div className="_nav-item-container">
-                            Test
-                        </div>
+                        <Link to='/calatorie'>
+                            <div className="_nav-item-container">
+                                Calatorie
+                            </div>
+                        </Link>
                     </div>
                 </div>
                 <div><img height='56' src={team} alt='logo'></img></div>

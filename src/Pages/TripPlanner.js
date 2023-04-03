@@ -2,7 +2,7 @@
 
 function TripPlanner() {
     return (
-        <div></div>
+        <div>calatorie</div>
     )
 }
 

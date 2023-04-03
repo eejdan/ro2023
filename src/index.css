@@ -16,3 +16,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+#footer {
+  width: 100%;
+  border-top: 1px solid rgb(144, 144, 144);
+  background-color: aliceblue;
+  text-align: center;
+}
