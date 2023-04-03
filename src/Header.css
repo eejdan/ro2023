@@ -1,0 +1,14 @@
+
+.header-wrapper {
+    width: 100%;
+    min-height: 90px;
+    background-image: linear-gradient(130deg, rgb(202,11,74) 0%, rgb(242,22,94) 100%);
+}
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
