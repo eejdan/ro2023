@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import './Cities.css'
 
+import db from './Cities/manifest';
 
 const options = [
     { value: 'bucuresti', label: 'Bucuresti'},
@@ -13,6 +14,7 @@ const options = [
     { value: 'timisoara', label: 'Timisoara'},
     { value: 'constanta', label: 'Constanta'},
 ]
+
 
 function Cities() {
     const [opacity, setOpacity] = useState("100%");

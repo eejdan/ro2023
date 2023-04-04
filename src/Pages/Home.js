@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import bkgimage1 from './bkg1.jpeg';
 import bkgimage2 from './bkg2.jpg';
 
-function Home() {  
+function Home() {
   return (
     <div className="wrapper">
       <BkgImage />
@@ -18,7 +18,7 @@ function Home() {
             <div className="section-container">
               <div>&nbsp;</div>
               <div>&nbsp;</div>
-              <h3>&nbsp;Hai sa redescoperim Romania!</h3>
+              <h2>&nbsp;Hai sa redescoperim Romania!</h2>
             </div>
           </div>
         </div>
@@ -36,31 +36,46 @@ function Home() {
               </div>
               <div className='cities-show'>
                 <div>
-                  <h3>Bucuresti</h3>
-                  <p>Despre Oras 648</p>
-                  <button>Afla mai multe..</button>
+                  <h3>Bucuresti<span style={{ fontStyle: 'normal' }}>⚽</span></h3>
+                  <p>Capitala Romaniei</p>
+                  <Link to='/bucuresti'>
+                    <div className='more-button'>Afla mai multe..</div>
+                  </Link>
                 </div>
                 <div>
-                  <h3>Brasov</h3>
-                  <p>Despre Oras 711</p>
-                  <button>Afla mai multe..</button>
+                  <h3>Brasov<span style={{ fontStyle: 'normal' }}>🚞</span></h3>
+                  <p>Centrul montan romanesc</p>
+                  <Link to='/brasov'>
+                    <div className='more-button'>Afla mai multe..</div>
+                  </Link>
                 </div>
                 <div>
-                  <h3>Timisoara</h3>
-                  <p>Despre Oras 650</p>
-                  <button>Afla mai multe..</button>
+                  <h3>Timisoara<span style={{ fontStyle: 'normal' }}>🏭</span></h3>
+                  <p>Centrul industrial, comercial, medical</p>
+                  <Link to='/timisoara'>
+                    <div className='more-button'>Afla mai multe..</div>
+                  </Link>
                 </div>
                 <div>
-                  <h3>Constanta</h3>
-                  <p>Despre Oras 656</p>
-                  <button>Afla mai multe..</button>
+                  <h3>Constanta<span style={{ fontStyle: 'normal' }}>🌞</span></h3>
+                  <p>Oras istoric</p>
+                  <Link to='/constanta'>
+                    <div className='more-button'>Afla mai multe..</div>
+                  </Link>
                 </div>
                 <div>
-                  <h3>Cluj-Napoca</h3>
-                  <p>Despre Oras 652</p>
-                  <button>Afla mai multe..</button>
+                  <h3>Cluj-Napoca<span style={{ fontStyle: 'normal' }}>🎓</span></h3>
+                  <p>Centru universitar prestigios</p>
+                  <Link to='/cluj-napoca'>
+                    <div className='more-button'>Afla mai multe..</div>
+                  </Link>
                 </div>
               </div>
+              <Link to='/orase'>
+                <div className='more-button' style={{
+                  marginTop: "10px", color: 'black', backgroundColor: 'white', fontSize: "1.1rem"
+                }}>..</div>
+              </Link>
             </div>
           </div>
         </div>
@@ -71,7 +86,7 @@ function Home() {
         </div>
         <div>
           <div className='section-wrapper'>
-            <div className="section-container"><h3>&nbsp;Planifica-ti vacanta ta in Romania acum!</h3>
+            <div className="section-container"><h3>&nbsp;Planifica-ti vacanta ta in Romania chiar acum!</h3>
               <Link to='/orase'>
                 <div className='section-button'>Da, vreau!</div>
               </Link>
@@ -114,7 +129,7 @@ function BkgImage() {
     };
   }, []);
   return (
-    <div className="page-background" style={{ transition: "opacity 1s",opacity: opacity, backgroundImage: `url(${source})`}}>
+    <div className="page-background" style={{ transition: "opacity 1s", opacity: opacity, backgroundImage: `url(${source})` }}>
     </div>
   )
 }

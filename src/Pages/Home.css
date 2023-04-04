@@ -79,9 +79,15 @@
 
     background: white;
     color: black;
-    border: 2px solid #C16D28;
-    border-radius: 40px 40px 40px 15px;
+    border: 6px solid orange;
+    border-radius: 40px 20px 40px 15px;
     padding: 20px;
+    transition: border 500ms;
+
+    overflow: hidden;
+}
+#track-container > div > .section-wrapper > .section-container > .cities-show > div:hover {
+    border: 6px solid rgb(69, 255, 184);
 }
 #track-container > div > .section-wrapper > .section-container > .cities-show > div > h3 {
     text-align: left;
@@ -90,8 +96,11 @@
     width: 100%;
     text-align: center;
 }
-#track-container > div > .section-wrapper > .section-container > .cities-show > div > button {
+#track-container > div > .section-wrapper .more-button {
     width: fit-content;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 2px solid #C16D28;
 }
 .cities-section {
     justify-content: space-around !important;

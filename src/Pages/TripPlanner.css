@@ -1,0 +1,33 @@
+.tp-wrapper {
+    margin: 0;
+    padding: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.tp-container {
+    flex-grow: 2;
+    
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.tp-form-wrapper {
+    flex-grow: 1;
+}
+.tp-form-result-wrapper {
+    flex-grow: 1;
+}
+.tp-form-result {
+    scale: 0%;
+    transition: scale 200ms;
+    transition-timing-function: ease;
+}
