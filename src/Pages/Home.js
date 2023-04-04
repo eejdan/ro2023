@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import bkgimage1 from './bkg1.jpeg';
 import bkgimage2 from './bkg2.jpg';
 
-function Home() {
+function Home() {  
   return (
     <div className="wrapper">
       <BkgImage />
@@ -87,14 +87,20 @@ function Home() {
 }
 
 function BkgImage() {
-  // const [scrollPosition, setScrollPosition] = useState(0);
+  const [opacity, setOpacity] = useState("1%");
   const [source, setSource] = useState(bkgimage1);
+  useEffect(() => {
+    setSource(bkgimage2);
+    setSource(bkgimage1);
+    setTimeout(() => {
+      setOpacity("100%");
+    }, 300)
+  }, [])
   const handleScroll = () => {
     const position = window.pageYOffset;
-    // setScrollPosition(position);
     console.log(position);
     console.log(window.outerHeight);
-    if (window.outerHeight * 0.92 < position) {
+    if (window.outerHeight * 0.9 < position) {
       setSource(bkgimage2);
     } else {
       setSource(bkgimage1);
@@ -108,7 +114,7 @@ function BkgImage() {
     };
   }, []);
   return (
-    <div className="page-background" style={{ backgroundImage: `url(${source})` }}>
+    <div className="page-background" style={{ transition: "opacity 1s",opacity: opacity, backgroundImage: `url(${source})`}}>
     </div>
   )
 }

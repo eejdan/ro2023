@@ -1,32 +1,111 @@
-.wrapper {
+.ct-wrapper {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
 }
+
 .cities-wrapper {
     flex-grow: 2;
 
     display: flex;
     flex-flow: column wrap;
-    
+
     align-items: center;
     justify-content: flex-start;
 }
-.cities-wrapper > * {
+
+.cities-wrapper>* {
     max-width: 1200px;
     width: 100%;
 }
-.cities-wrapper > .cities-carousel {
-    flex-grow: 2;
-}
-
-.cities-carousel {
+.cities-select {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    
+}
+.cities-select-container {
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 600px;
+}
+.cities-wrapper>.city-wrapper {
+    flex-grow: 2;
+}
+
+.city-wrapper {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
     padding: 50px;
+    padding-bottom: 10px;
+}
+
+.city-container {
+    border: 1px solid black;
+    border-radius: 40px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.city-container > .city-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.city-container .city-description {
+    padding: 10px;
+    text-align: justify;
+    font-size: 1.1rem;
+        display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.city-container > .city-tiles {
+    flex-grow: 2;
+    
+    width:100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 20px;
+}
+.city-tile-row {
+    gap: 20px;
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.city-tile-row > div {
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    
+}
+.city-tile-row > .city-attraction {
+    border-radius: 40px 4px 40px 4px;
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        height: 100vh;
+    }
+}
+@media screen and (max-width: 767px) {
+    .wrapper {
+        height: max-content;
+    }
 }
