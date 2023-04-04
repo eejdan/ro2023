@@ -70,8 +70,23 @@
     font-size: 1.1rem;
         display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border: none;
+}
+.city-container .city-description:before {
+    content: ''
+}
+.city-container .city-find-out-more {
+    margin-top: 10px; margin-left: 20px;
+    width: fit-content;
+    padding: 5px 30px;
+    border-radius: 20px 20px 4px 20px;
+    
+    font-style: italic;
+    color:white;
+    border: 2px solid rgb(202,11,74);
+    background-color: #D10D4E;
 }
 .city-container > .city-tiles {
     flex-grow: 2;
@@ -92,11 +107,34 @@
 .city-tile-row > div {
     width: 500px;
     height: 300px;
-    border: 1px solid black;
+    border: 2px solid rgb(202,11,74);
     
 }
 .city-tile-row > .city-attraction {
     border-radius: 40px 4px 40px 4px;
+    overflow: hidden;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    background-color: #D10D4E;
+}
+.city-tile-row > .city-attraction > img {
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+
+}
+.city-tile-row > .city-attraction > div {
+    width: 100%;
+    padding: 2px;
+    color: white;
+    text-align: center;
+    font-family: 'Trirong', serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 @media screen and (min-width: 768px) {

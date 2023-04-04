@@ -38,35 +38,35 @@ function Home() {
                 <div>
                   <h3>Bucuresti<span style={{ fontStyle: 'normal' }}>⚽</span></h3>
                   <p>Capitala Romaniei</p>
-                  <Link to='/bucuresti'>
+                  <Link to='/oras/bucuresti'>
                     <div className='more-button'>Afla mai multe..</div>
                   </Link>
                 </div>
                 <div>
                   <h3>Brasov<span style={{ fontStyle: 'normal' }}>🚞</span></h3>
                   <p>Centrul montan romanesc</p>
-                  <Link to='/brasov'>
+                  <Link to='/oras/brasov'>
                     <div className='more-button'>Afla mai multe..</div>
                   </Link>
                 </div>
                 <div>
                   <h3>Timisoara<span style={{ fontStyle: 'normal' }}>🏭</span></h3>
                   <p>Centrul industrial, comercial, medical</p>
-                  <Link to='/timisoara'>
+                  <Link to='/oras/timisoara'>
                     <div className='more-button'>Afla mai multe..</div>
                   </Link>
                 </div>
                 <div>
                   <h3>Constanta<span style={{ fontStyle: 'normal' }}>🌞</span></h3>
                   <p>Oras istoric</p>
-                  <Link to='/constanta'>
+                  <Link to='/oras/constanta'>
                     <div className='more-button'>Afla mai multe..</div>
                   </Link>
                 </div>
                 <div>
                   <h3>Cluj-Napoca<span style={{ fontStyle: 'normal' }}>🎓</span></h3>
                   <p>Centru universitar prestigios</p>
-                  <Link to='/cluj-napoca'>
+                  <Link to='/oras/cluj-napoca'>
                     <div className='more-button'>Afla mai multe..</div>
                   </Link>
                 </div>
@@ -87,7 +87,7 @@ function Home() {
         <div>
           <div className='section-wrapper'>
             <div className="section-container"><h3>&nbsp;Planifica-ti vacanta ta in Romania chiar acum!</h3>
-              <Link to='/orase'>
+              <Link to='/calatorie'>
                 <div className='section-button'>Da, vreau!</div>
               </Link>
               <br />

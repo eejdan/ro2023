@@ -1,4 +1,4 @@
-.tp-wrapper {
+.tp-page-wrapper {
     margin: 0;
     padding: 0;
 
@@ -10,19 +10,80 @@
     justify-content: space-around;
     align-items: center;
 }
-.tp-container {
+.tp-wrapper {
     flex-grow: 2;
-    
+
     width: 100%;
+    height: 100%;
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 }
+.tp-container {
+    
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.tp-container > * {
+
+}
 .tp-form-wrapper {
     flex-grow: 1;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
+.tp-form {
+    width: 400px;
+    min-height: 600px;
+    padding: 20px;
+
+    border: 2px solid black;
+    border-radius: 26px 26px 26px 4px;
+    background-color: white;
+}
+.tp-form > *:first-child {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-style: italic;
+}
+.vsel-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.vsel-wrapper > * {
+    flex-grow: 1
+}
+.tp-form input {
+    margin-bottom: 10px;
+}
+#date-input {
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 4px;
+    padding: 7px;
+
+}
+.tp-form-guided {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.tp-form-guided > input[type="range"] {
+    width: 100%;
+}
+
 .tp-form-result-wrapper {
     flex-grow: 1;
 }

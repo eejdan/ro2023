@@ -21,3 +21,17 @@ a {
   text-decoration: inherit;
   color: inherit;
 }
+span.separator {
+  border-top: 1px solid #333;
+  width: 100%;
+  height: 1px;
+  display: block;
+}
+.fiftyflex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.fiftyflex > * {
+  flex-grow: 1;
+}

@@ -1,0 +1,41 @@
+.city-page-wrapper {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.city-content-wrapper {
+    flex-grow: 2;
+    width: 100%;
+    backdrop-filter: blur(1px) brightness(80%) contrast(80%);
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.city-page-bkg {
+    z-index: -1;
+    position: fixed;
+    overflow:hidden;
+}
+.city-page-bkg > img {
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+}
+
+.city-content {
+    max-width: 1200px;
+    width: 100vw;
+
+    margin-top: 30px;
+    padding: 30px;
+    background-color: white;
+    border: 2px solid #caccd1;
+    border-radius: 60px;
+}

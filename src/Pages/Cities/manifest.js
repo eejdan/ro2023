@@ -3,7 +3,9 @@
 const manifest = {
     cities: ['bucuresti', 'cluj-napoca', 'brasov', 'timisoara', 'constanta'],
     'cluj-napoca': {
+        title: 'Cluj-Napoca',
         desc: "Municipiul Cluj-Napoca este un centru universitar prestigios și un oraș înfloritor. S-a făcut cunoscut pe plan național și chiar internațional, fiind în permanență gazda unor festivaluri muzicale, sportive, concerte, expoziții și numeroase alte evenimente culturale importante. Există multe atracții turistice în Cluj-Napoca și în apropiere, făcându-l o destinație de vacanță potrivită.",
+        visit: 2,
         attractions: {
             count: 3,
             0: {
@@ -32,7 +34,7 @@ const manifest = {
                 gmaps_link: 'https://goo.gl/maps/8fdf2DDAtSxNt9CBA'
             }, 2: {
                 title: 'Casa Matia',
-                desc: 'Casa Matia din Cluj-Napoca, inițial „Casa Stefan Kolb”, este unul dintre cele mai vechi monumente de arhitectură din Cluj, unicul palat clujean din epoca de tranziție de la stilul gotic la cel renascentist. În această clădire, situată în Evul Mediu pe str. Sf. Spirit nr. 258 iar în prezent pe strada Matei Corvin nr. 6, s-a născut regele Matia Corvin. Clădirea a fost construită în secolul al XV-lea și este amplasată în interiorul primei incinte de apărare aparținând vechii cetăți. Inițial a aparținut patricianului sas Stefan Kolb.[2] Conform unor alte surse, ar fi fost folosită și drept han[3], iar în 1740 a fost cumpărată de urbea clujeană, îndeplinind și alte scopuri, cum ar fi cel de închisoare sau de spital. În 1887 împăratul Francisc Iosif a făcut o vizită orașului, ocazie cu care pe clădire a fost amplasată o placă comemorativă, proiectată de Lajos Pakey și realizată de sculptorul György Zala.',
+                desc: 'Casa Matia din Cluj-Napoca, inițial „Casa Stefan Kolb”, este unul dintre cele mai vechi monumente de arhitectură din Cluj, unicul palat clujean din epoca de tranziție de la stilul gotic la cel renascentist. În această clădire, situată în Evul Mediu pe str. Sf. Spirit nr. 258 iar în prezent pe strada Matei Corvin nr. 6, s-a născut regele Matia Corvin. Clădirea a fost construită în secolul al XV-lea și este amplasată în interiorul primei incinte de apărare aparținând vechii cetăți. Inițial a aparținut patricianului sas Stefan Kolb. Conform unor alte surse, ar fi fost folosită și drept han, iar în 1740 a fost cumpărată de urbea clujeană, îndeplinind și alte scopuri, cum ar fi cel de închisoare sau de spital. În 1887 împăratul Francisc Iosif a făcut o vizită orașului, ocazie cu care pe clădire a fost amplasată o placă comemorativă, proiectată de Lajos Pakey și realizată de sculptorul György Zala.',
                 photos: {
                     count: 3,
                     0: '/cities/cluj-napoca/attr3/p1.jpg',
@@ -46,7 +48,9 @@ const manifest = {
         }
     },
     'constanta': {
-        desc: "Constanța este unul dintre cele mai vechi orașe atestate de pe teritoriul României. Prima atestare documentară datează din 657 î.Hr. când pe locul actualei peninsule (și chiar sub apele de azi, în dreptul Cazinoului) s-a format o colonie greacă numită Tomis.[4] Localitatea a fost cucerită de romani în 71 î.Hr. și redenumită Constantiana după sora împăratului Constantin cel Mare. În cursul secolului XIII Marea cea mare (cum era denumită atunci Marea Neagră) a fost dominată de negustorii italieni din Genova care au ajutat la dezvoltarea orașului. Ulterior, Constanța a suferit un declin sub conducerea otomană, devenind un simplu sat locuit de pescari greci și de crescători tătari de cai și oi. Localitatea a redevenit oraș după construirea căii ferate Cernavodă-Constanța și a portului, în 1865, pentru exportul grânelor românești. După Războiul de Independență (1877-1878), când Dobrogea a devenit parte a României, Constanța, principal port al statului, a crescut continuu, deținând acest rol până astăzi.",
+        title: 'Constanta',
+        desc: "Constanța este unul dintre cele mai vechi orașe atestate de pe teritoriul României. Prima atestare documentară datează din 657 î.Hr. când pe locul actualei peninsule (și chiar sub apele de azi, în dreptul Cazinoului) s-a format o colonie greacă numită Tomis. Localitatea a fost cucerită de romani în 71 î.Hr. și redenumită Constantiana după sora împăratului Constantin cel Mare. În cursul secolului XIII Marea cea mare (cum era denumită atunci Marea Neagră) a fost dominată de negustorii italieni din Genova care au ajutat la dezvoltarea orașului. Ulterior, Constanța a suferit un declin sub conducerea otomană, devenind un simplu sat locuit de pescari greci și de crescători tătari de cai și oi. Localitatea a redevenit oraș după construirea căii ferate Cernavodă-Constanța și a portului, în 1865, pentru exportul grânelor românești. După Războiul de Independență (1877-1878), când Dobrogea a devenit parte a României, Constanța, principal port al statului, a crescut continuu, deținând acest rol până astăzi.",
+        visit: 2,
         attractions: {
             count: 3,
             0: {
@@ -89,7 +93,9 @@ const manifest = {
         }
     },
     'brasov': {
+        title: 'Brasov',
         desc: "Brașov este municipiul de reședință al județului cu același nume, Transilvania, România, format din localitățile componente Brașov (reședința) și Poiana Brașov. Potrivit recensământului din 2011, are o populație de 253.200 locuitori. Patron al orașului este considerată a fi Fecioara Maria. Statuia acesteia se află pe unul dintre contraforturile Bisericii Negre, îndreptat spre Casa Sfatului, având stema Brașovului sculptată dedesubt în relief. Brașovul este cel mai important oraș din regiunea de dezvoltare centrală.",
+        visit: 2,
         attractions: {
             count: 3,
             0: {
@@ -132,7 +138,9 @@ const manifest = {
         }
     },
     'timisoara': {
+        title: 'Timisoara',
         desc: "Timișoara este un centru industrial, comercial, medical, cultural și universitar important pentru România. Acesta găzduiește sediile multora din cele mai mari firme autohtone: compania aeriană Carpatair; retailer-ul Life Care; compania de IT&C ETA2U; producătorul de sisteme de iluminat ELBA; producătorul de vopsele Azur; firma de încălțăminte Guban; fabrica de bere Timișoreana; precum și cel mai mare combinat de prelucrare a cărnii din sud-estul Europei, Comtim.",
+        visit: 2,
         attractions: {
             count: 3,
             0: {
@@ -175,7 +183,9 @@ const manifest = {
         }
     },
     'bucuresti': {
-        desc: "București este capitala României, cel mai populat oraș și cel mai important centru industrial și comercial al țării. Din punct de vedere economic, București este orașul cel mai prosper din România,[15] și este unul dintre principalele centre industriale și noduri de transport din Europa de Est. Orașul are facilități pentru convenții, instituții de învățământ, zone culturale, centre comerciale, și zone de agrement.",
+        title: 'Bucuresti',
+        desc: "București este capitala României, cel mai populat oraș și cel mai important centru industrial și comercial al țării. Din punct de vedere economic, București este orașul cel mai prosper din România, și este unul dintre principalele centre industriale și noduri de transport din Europa de Est. Orașul are facilități pentru convenții, instituții de învățământ, zone culturale, centre comerciale, și zone de agrement.",
+        visit: 2,
         attractions: {
             count: 3,
             0: {
