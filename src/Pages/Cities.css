@@ -1,0 +1,32 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+.cities-wrapper {
+    flex-grow: 2;
+
+    display: flex;
+    flex-flow: column wrap;
+    
+    align-items: center;
+    justify-content: flex-start;
+}
+.cities-wrapper > * {
+    max-width: 1200px;
+    width: 100%;
+}
+.cities-wrapper > .cities-carousel {
+    flex-grow: 2;
+}
+
+.cities-carousel {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 50px;
+}

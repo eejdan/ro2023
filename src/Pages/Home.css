@@ -1,20 +1,112 @@
 
 
-#track-container {
-    width: 100%;
+.page-background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-#track-container > section {
+
+#track-container {
+    color: white;
     width: 100%;
-    min-height: 90vh;
+    backdrop-filter: blur(1px) brightness(80%) contrast(80%);
+}
+.themed-background {
+    background-color: #D10D4E;
+    color: white;
+}
+#track-container > div {
+    width: 100%;
+    margin: 0;
+}
+.section-top-svg {
+    margin: 0;
+    overflow:hidden;
+    
+}
+#track-container > div > .section-wrapper {
+    width: 100%;
+    min-height: 60vh;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    font-style: italic;
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
-
 
 }
-#track-container > section > .section-container {
+#track-container > div > .section-cover {
+    min-height: 100vh !important;
+}
+#track-container > div > .section-wrapper > .section-container {
     width: 100%;
+    max-width: 1200px;
+    min-height: 60vh;
     height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#track-container > div > .section-wrapper > .section-container > div > p { 
+    margin-top: 1px;
+    font-style: normal;
+    font-size: 1.6rem;
+}
+#track-container > div > .section-wrapper > .section-container > .cities-show {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto;
+}
+#track-container > div > .section-wrapper > .section-container > .cities-show > div {
+    width: 240px;
+    
+    font-size: 1.4rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    background: white;
+    color: black;
+    border: 2px solid #C16D28;
+    border-radius: 40px 40px 40px 15px;
+    padding: 20px;
+}
+#track-container > div > .section-wrapper > .section-container > .cities-show > div > h3 {
+    text-align: left;
+}
+#track-container > div > .section-wrapper > .section-container > .cities-show > div > p {
+    width: 100%;
+    text-align: center;
+}
+#track-container > div > .section-wrapper > .section-container > .cities-show > div > button {
+    width: fit-content;
+}
+.cities-section {
+    justify-content: space-around !important;
+}
+#track-container .section-button {
+    margin-top: 10px;
+    padding: 10px 60px;
+    background-color: rgb(242,22,94);
+    color: white;
+    border: 2px solid  rgb(201, 98, 98);
+    border-radius: 30px;
+    backdrop-filter: blur(3px) brightness(170%);
+}
+@media screen and (max-width: 1240px) {
+    #track-container > div > .section-wrapper > .section-container {
+        padding: 0 20px;
+    }
 }
