@@ -276,7 +276,7 @@ function TripPlanner() {
         }
         var TrainTripRoute = calculateTrainTrip(tripRoute);
         let newTrs = [];
-        newTrs.push({ 0: '0', 1: 'Data plecarii:' + depDate, 2: '' })
+        newTrs.push({ 0: '0', 1: 'Data plecarii: ' + new Date(depDate).toLocaleDateString('ro-RO'), 2: '' })
         let count = 0;
 
         tripRoute.forEach(city => {
