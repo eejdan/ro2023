@@ -69,7 +69,7 @@ function Cities() {
                             <div className="city-tile-row">
                                 <div className="city-description">
                                     <div>{cityDesc}</div>
-                                    <div className="city-find-out-more"><Link to={'/'+currentCity}>Mai multe despre oras</Link></div>
+                                    <div className="city-find-out-more"><Link to={'/oras/'+currentCity}>Mai multe despre oras</Link></div>
                                 </div>
                                 <div className="city-attraction">
                                     <img alt='' src={process.env.PUBLIC_URL + linkOne}></img>

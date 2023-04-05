@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import TripPlanner from './Pages/TripPlanner';
 import Cities from './Pages/Cities';
 import City from './Pages/City';
+import Attraction from './Pages/Attraction'
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         <Route path="cluj-napoca" element={<City />} />
         <Route path="timisoara" element={<City />} />
         <Route path="constanta" element={<City />} />
+      </Route>
+      <Route path='atractie/:city/:atractie' element={<Attraction />}>
+
       </Route>
       <Route path='calatorie' element={<TripPlanner />}></Route>
     </Routes>
