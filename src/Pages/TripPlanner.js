@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 import Select from 'react-select';
 
 import Header from "../components/Header";
@@ -274,9 +274,33 @@ function TripPlanner() {
             setFormResult(newTable);
             return;
         }
-        tripRoute = calculateTrainTrip(tripRoute);
+        var TrainTripRoute = calculateTrainTrip(tripRoute);
         let newTrs = [];
+        newTrs.push({ 0: '0', 1: 'Data plecarii:' + depDate, 2: '' })
+        let count = 0;
 
+        tripRoute.forEach(city => {
+            count++;
+            newTrs.push({
+                0: '' + count + '',
+                1: 'Vizita oras - ' + db[city].title,
+                2: db[city].visit+' zile'
+            })
+            newTrs.push({
+                0: '',
+                1: 'Zi tranzit - plecare din:' + db[city].title,
+                2: ''
+            })
+        })
+        let newRows = newTrs.map(tr => <tr>
+            <td>{tr[0]}</td>
+            <td>{tr[1]}</td>
+            <td>{tr[2]}</td>
+        </tr>)
+        newTable = <table><tbody>
+            {newRows}
+        </tbody></table>
+        setFormResult(newTable);
     }
     useEffect(() => {
         let a = document.getElementById('date-input');
