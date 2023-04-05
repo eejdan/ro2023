@@ -92,3 +92,21 @@
     transition: scale 200ms;
     transition-timing-function: ease;
 }
+.tp-form-result > table {
+    border: 1px solid #caccd1;
+    font-size: 1.05rem;
+    background: white;
+}
+.tp-form-result tr:nth-child(even){ background-color: #f2f2f2;} 
+.tp-form-result td {
+    padding: 4px;
+    border: 1pt solid #caccd1;
+}
+@media screen and (max-width: 900px) {
+    .tp-page-wrapper {
+        height: auto;
+    }
+    .tp-container {
+        flex-flow: column nowrap;
+    }
+}

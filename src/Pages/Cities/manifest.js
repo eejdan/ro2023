@@ -5,7 +5,19 @@ const manifest = {
     'cluj-napoca': {
         title: 'Cluj-Napoca',
         desc: "Municipiul Cluj-Napoca este un centru universitar prestigios și un oraș înfloritor. S-a făcut cunoscut pe plan național și chiar internațional, fiind în permanență gazda unor festivaluri muzicale, sportive, concerte, expoziții și numeroase alte evenimente culturale importante. Există multe atracții turistice în Cluj-Napoca și în apropiere, făcându-l o destinație de vacanță potrivită.",
-        visit: 2,
+        visit: 3,
+        tags: {
+            'natura': false,
+            'urbanism': true,
+            'cetate': false,
+            'universitar': false,
+            'munte': false,
+            'mare': false,
+            'padure': false,
+            'piata_alee_istorica': false,
+            'catedrala': false,
+            'cladire_politica': false,
+        },
         attractions: {
             count: 3,
             0: {
@@ -50,7 +62,19 @@ const manifest = {
     'constanta': {
         title: 'Constanta',
         desc: "Constanța este unul dintre cele mai vechi orașe atestate de pe teritoriul României. Prima atestare documentară datează din 657 î.Hr. când pe locul actualei peninsule (și chiar sub apele de azi, în dreptul Cazinoului) s-a format o colonie greacă numită Tomis. Localitatea a fost cucerită de romani în 71 î.Hr. și redenumită Constantiana după sora împăratului Constantin cel Mare. În cursul secolului XIII Marea cea mare (cum era denumită atunci Marea Neagră) a fost dominată de negustorii italieni din Genova care au ajutat la dezvoltarea orașului. Ulterior, Constanța a suferit un declin sub conducerea otomană, devenind un simplu sat locuit de pescari greci și de crescători tătari de cai și oi. Localitatea a redevenit oraș după construirea căii ferate Cernavodă-Constanța și a portului, în 1865, pentru exportul grânelor românești. După Războiul de Independență (1877-1878), când Dobrogea a devenit parte a României, Constanța, principal port al statului, a crescut continuu, deținând acest rol până astăzi.",
-        visit: 2,
+        visit: 3,
+        tags: {
+            'natura': true,
+            'urbanism': false,
+            'cetate': false,
+            'universitar': false,
+            'munte': false,
+            'mare': true,
+            'padure': false,
+            'piata_alee_istorica': true,
+            'catedrala': false,
+            'cladire_politica': false,
+        },
         attractions: {
             count: 3,
             0: {
@@ -96,6 +120,18 @@ const manifest = {
         title: 'Brasov',
         desc: "Brașov este municipiul de reședință al județului cu același nume, Transilvania, România, format din localitățile componente Brașov (reședința) și Poiana Brașov. Potrivit recensământului din 2011, are o populație de 253.200 locuitori. Patron al orașului este considerată a fi Fecioara Maria. Statuia acesteia se află pe unul dintre contraforturile Bisericii Negre, îndreptat spre Casa Sfatului, având stema Brașovului sculptată dedesubt în relief. Brașovul este cel mai important oraș din regiunea de dezvoltare centrală.",
         visit: 2,
+        tags: {
+            'natura': true,
+            'urbanism': false,
+            'cetate': true,
+            'universitar': false,
+            'munte': true,
+            'mare': false,
+            'padure': true,
+            'piata_alee_istorica': true,
+            'catedrala': false,
+            'cladire_politica': false,
+        },
         attractions: {
             count: 3,
             0: {
@@ -141,6 +177,18 @@ const manifest = {
         title: 'Timisoara',
         desc: "Timișoara este un centru industrial, comercial, medical, cultural și universitar important pentru România. Acesta găzduiește sediile multora din cele mai mari firme autohtone: compania aeriană Carpatair; retailer-ul Life Care; compania de IT&C ETA2U; producătorul de sisteme de iluminat ELBA; producătorul de vopsele Azur; firma de încălțăminte Guban; fabrica de bere Timișoreana; precum și cel mai mare combinat de prelucrare a cărnii din sud-estul Europei, Comtim.",
         visit: 2,
+        tags: {
+            'natura': false,
+            'urbanism': false,
+            'cetate': false,
+            'universitar': true,
+            'munte': false,
+            'mare': false,
+            'padure': false,
+            'piata_alee_istorica': true,
+            'catedrala': true,
+            'cladire_politica': false,
+        },
         attractions: {
             count: 3,
             0: {
@@ -185,7 +233,19 @@ const manifest = {
     'bucuresti': {
         title: 'Bucuresti',
         desc: "București este capitala României, cel mai populat oraș și cel mai important centru industrial și comercial al țării. Din punct de vedere economic, București este orașul cel mai prosper din România, și este unul dintre principalele centre industriale și noduri de transport din Europa de Est. Orașul are facilități pentru convenții, instituții de învățământ, zone culturale, centre comerciale, și zone de agrement.",
-        visit: 2,
+        visit: 5,
+        tags: {
+            'natura': false,
+            'urbanism': true,
+            'cetate': false,
+            'universitar': true,
+            'munte': false,
+            'mare': false,
+            'padure': false,
+            'piata_alee_istorica': false,
+            'catedrala': true,
+            'cladire_politica': true,
+        },
         attractions: {
             count: 3,
             0: {
